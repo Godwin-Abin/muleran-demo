@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7; /* Light gray background */
+}
+
+header {
+    background-color: #3498db; /* Bright blue background */
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    border-bottom: 5px solid #2ecc71; /* Green border */
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 50%; /* Circular border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    position: absolute; /* Add this line */
+    top: 10px; /* Add this line */
+    left: 10px; /* Add this line */
+    margin-top: -5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    flex-grow: 1;
+    background-color: #fff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #2c3e50; /* Dark blue text */
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #95a5a6; /* Light gray text */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f1c40f; /* Yellow background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+a {
+    color: #e74c3c; /* Red text */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c0392b; /* Dark red text */
+}
+
+footer {
+    background-color: #2ecc71; /* Green background */
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    margin-top: auto;
+    border-top: 5px solid #3498db; /* Blue border */
+}
+
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+    header img {
+        width: 80px;
+        height: 80px;
+    }
+    main {
+        padding: 1em;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 60px;
+        height: 60px;
+        margin-top: -4px;
+    }
+    main {
+        padding: 0.5em;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 320px) {
+    header img {
+        width: 30px;
+        height: 30px;
+    }
+    main {
+        padding: 0.2em;
+    }
+    h1 {
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 10px;
+    }
+}
